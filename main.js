@@ -128,7 +128,7 @@ function setYear(selectedYear) {
 			path.setAttribute('d', eggPath);
 		} else {
 			// Past or current month.
-			link.setAttribute('href', `/${selectedYear}/${String(i).padStart(2, '0')}`);
+			link.setAttribute('href', `${selectedYear}/${String(i).padStart(2, '0')}`);
 			link.classList.remove('future');
 		}
 	});

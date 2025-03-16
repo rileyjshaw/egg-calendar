@@ -15,4 +15,4 @@ Months in the future are still in the shell.
 
 ---
 
-Started with [Websim](websim.ai/@rileyjshaw/egg-calendar/)
+Started with [Websim](https://websim.ai/@rileyjshaw/egg-calendar/)
