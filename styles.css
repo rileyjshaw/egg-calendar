@@ -1,0 +1,151 @@
+@property --color-yolk {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #ffd23c;
+}
+
+@property --color-dark {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #101;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+	background: var(--color-dark);
+	margin: 0;
+	height: 100dvh;
+	width: 100dvw;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	color: var(--color-dark);
+	background: var(--color-yolk);
+	display: flex;
+	overflow-x: hidden;
+	gap: 36px;
+	margin-bottom: 24px;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 12px;
+	padding-block: 8px 6px;
+	flex-grow: 0;
+	min-height: 0;
+}
+
+header button {
+	all: unset;
+	cursor: pointer;
+	font-size: 32px;
+	user-select: none;
+}
+
+header button.selected {
+	text-decoration: underline;
+}
+
+main {
+	container-type: inline-size;
+	min-height: 0;
+	flex-grow: 1;
+	height: 100%;
+}
+
+.grid-container {
+	display: grid;
+	height: 100%;
+	/* Default in case container queries aren’t supported */
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Between 1:12 and 1:3 */
+@container (min-width: 20.8cqh) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Between 1:3 and 3:4 */
+@container (min-width: 54.2cqh) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Between 3:4 and 4:3 */
+@container (min-width: 104cqh) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* Between 4:3 and 6:2 */
+@container (min-width: 217cqh) {
+	.grid-container {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+/* Between 6:2 and 12:1 */
+@container (min-width: 750cqh) {
+	.grid-container {
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
+
+.egg {
+	width: 100%;
+	height: 100%;
+	shape-rendering: geometricPrecision;
+	transition: transform 0.3s ease;
+}
+
+.egg a {
+	cursor: pointer;
+	pointer-events: all;
+}
+
+use {
+	fill: #f3eee2;
+	transform-origin: center;
+	transform-box: fill-box;
+	transform: scale(1.3);
+	transition: transform 0.3s ease;
+}
+
+text {
+	fill: var(--color-dark);
+	font-size: 4px;
+}
+
+.center-text {
+	fill: var(--color-dark);
+	font-size: 16px;
+	text-anchor: middle;
+	dominant-baseline: middle;
+}
+
+.egg a:hover use {
+	transform: scale(1.35);
+	transition: transform 0.3s ease;
+}
+
+circle {
+	fill: var(--color-yolk);
+}
+
+.future circle {
+	fill: transparent;
+}
+
+.future:hover {
+	cursor: not-allowed;
+}

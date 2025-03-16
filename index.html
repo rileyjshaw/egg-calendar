@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egg calendar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Years go here -->
+  </header>
+  <main>
+    <div class="grid-container">
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-1" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-1"  />
+            <text>
+              <textPath href="#actual-text-path-1" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">01</text>
+          </a>
+        </svg>
+
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-2" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-2"  />
+            <text>
+              <textPath href="#actual-text-path-2" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">02</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-3" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-3"  />
+            <text>
+              <textPath href="#actual-text-path-3" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">03</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-4" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-4"  />
+            <text>
+              <textPath href="#actual-text-path-4" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">04</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-5" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-5"  />
+            <text>
+              <textPath href="#actual-text-path-5" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">05</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-6" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-6"  />
+            <text>
+              <textPath href="#actual-text-path-6" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">06</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-7" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-7"  />
+            <text>
+              <textPath href="#actual-text-path-7" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">07</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-8" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-8"  />
+            <text>
+              <textPath href="#actual-text-path-8" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">08</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-9" />
+          </defs>
+          <a class="link">
+            <use href="#actual-text-path-9"  />
+            <text>
+              <textPath href="#actual-text-path-9" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">09</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-10" />
+          </defs>
+          <a class="link"">
+            <use href="#actual-text-path-10"  />
+            <text>
+              <textPath href="#actual-text-path-10" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">10</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-11" />
+          </defs>
+          <a class="link"">
+            <use href="#actual-text-path-11"  />
+            <text>
+              <textPath href="#actual-text-path-11" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">11</text>
+          </a>
+        </svg>
+      
+        <svg class="egg" viewBox="-50 -50 100 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path class="actual-text-path" id="actual-text-path-12" />
+          </defs>
+          <a class="link"">
+            <use href="#actual-text-path-12"  />
+            <text>
+              <textPath href="#actual-text-path-12" startOffset="0">
+                <tspan class="text-content"></tspan>
+              </textPath>
+            </text>
+            <circle cx="0" cy="-1" r="12" fill="transparent" />
+            <text class="center-text month-text" x="0" y="0">12</text>
+          </a>
+        </svg>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

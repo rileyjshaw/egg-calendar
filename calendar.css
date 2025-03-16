@@ -1,0 +1,47 @@
+body, p {
+  margin: 0;
+}
+
+body {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  background: #fafff4;
+  color: #212;
+  text-shadow: 1px 1px 1px #844;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.day .wrapper {
+  overflow: visible;
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  display: inline-block;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+p.show {
+  visibility: visible;
+}
+
