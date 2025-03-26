@@ -30,7 +30,7 @@ header {
 	color: var(--color-dark);
 	background: var(--color-yolk);
 	display: flex;
-	overflow-x: hidden;
+	overflow: hidden;
 	gap: 36px;
 	margin-bottom: 24px;
 	align-items: center;
